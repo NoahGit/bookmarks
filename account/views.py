@@ -5,7 +5,7 @@ from .forms import LoginForm
 
 
 def user_login(request):
-    # if request.method == 'POST':
+    if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
             cd = form.cleaned_data
@@ -21,3 +21,5 @@ def user_login(request):
         else:
             form = LoginForm()
         return render(request, 'account/login.html', {'form': form})
+    else:
+        return render(request, 'account/login.html')

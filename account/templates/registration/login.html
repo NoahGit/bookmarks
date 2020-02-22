@@ -1,17 +1,16 @@
 {% extends "base.html" %}
 
-{% block title %}Log-in{% endblock %}
+{% block title %}登陆{% endblock %}
 
 {% block content %}
-    <h1>Log-in</h1>
+    <h1>登陆</h1>
     {% if form.errors %}
         <p>
-            your username and password didn't match.
-            please try again.
+            您的用户名和密码不匹配。 请再试一次。
         </p>
     {% else %}
         <p>
-            Please, use the following form to log-in:
+            请使用以下表格登入:
         </p>
     {% endif %}
     <div class="login-form">
@@ -20,7 +19,7 @@
             {% csrf_token %}
             <input type="hidden" name="next" value="{{ next }}">
             <p>
-                <input type="submit" value="Log-in">
+                <input type="submit" value="登陆">
             </p>
         </form>
     </div>

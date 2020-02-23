@@ -149,8 +149,8 @@ LOGOUT_URL = 'logout'
 # 值是你的settings,比如 mysite.settings 。
 
 EMAIL_HOST = 'smtp.163.com'
-EMAIL_HOST_USER = 'xiangjiaotuobei@163.com'  # 填写你的邮件地址
-EMAIL_HOST_PASSWORD = 'gaoyong1983'  # 邮箱的smtp授权码
+EMAIL_HOST_USER = 'c5t4v@163.com'  # 填写你的邮件地址
+EMAIL_HOST_PASSWORD = 'GaoYong1983'  # 邮箱的smtp授权码
 EMAIL_PORT = 25
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER

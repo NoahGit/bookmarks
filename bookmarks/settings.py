@@ -128,4 +128,29 @@ LOGIN_REDIRECT_URL = 'dashboard'
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# 向控制台写入邮件，用于程序测试，将所有邮件输出到shell中
+# EMALL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
+# 没有本地SMTP服务器，用邮件服务提供商的SMTP服务器
+# 昨天遇到一个问题，pycharm 中运行不了django的程序，看错误是：
+# django.core.exceptions.ImproperlyConfigured: Requested setting CACHES,
+# but settings are not configured. You must either define the environment variable
+# DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.
+# 结果百度了半天没结果，最后还是在 老外的网站上找到了答案。
+# 本来django项目在 python shell 中可以完美运行，在pycharm里面就不行，
+# 原因是pycharm 要你配置一个  环境变量  DJANGO_SETTINGS_MODULE
+# 这个变量告诉django项目去找哪一个settings 文件。  具体的步骤：
+# 1、Run  -->  EditConfigures
+# 2、找到python一项  具体名字是 Python tests（注意不是django那一个），
+# 然后修改里面的Environment variables 添加一项。名称是DJANGO_SETTINGS_MODULE
+# 值是你的settings,比如 mysite.settings 。
+
+EMAIL_HOST = 'smtp.163.com'
+EMAIL_HOST_USER = 'xiangjiaotuobei@163.com'  # 填写你的邮件地址
+EMAIL_HOST_PASSWORD = 'gaoyong1983'  # 邮箱的smtp授权码
+EMAIL_PORT = 25
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER

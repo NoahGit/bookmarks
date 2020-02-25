@@ -42,4 +42,5 @@ urlpatterns = [
              template_name="account/password_reset_complete.html"
          ),
          name='password_reset_complete'),
+    path('register/', views.register, name='register'),
 ]

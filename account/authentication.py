@@ -11,7 +11,7 @@ class EmailAuthBackend(object):
     """
     Authenticate using an e-mail address.
     """
-    # @staticmethod
+    # @staticmethod 千万不能加这行，加了报错。
     def authenticate(self, request, username=None, password=None):
         try:
             user = User.objects.get(email=username)
@@ -21,7 +21,7 @@ class EmailAuthBackend(object):
         except User.DoesNotExist:
             return None
 
-    # @staticmethod
+    # @staticmethod 千万不能加这行，加了报错。
     def get_user(self, user_id):
         try:
             return User.objects.get(pk=user_id)

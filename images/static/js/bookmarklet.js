@@ -32,6 +32,17 @@
               jQuery('#bookmarklet .images').append('<a href="#"><img src="'+image_url+'" /></a>');
           }
       });
+
+      // when an image is selected open URL with it
+      jQuery('#bookmarklet .images a').click(function(e){
+          let selected_image = jQuery(this).children('img').attr('src');
+          // hide bookmarklet
+          jQuery('#bookmarklet').hide();
+          // open new window to submit the image
+          window.open(site_url + 'images/create/?url='
+              + encodeURIComponent(selected_image)
+              + '&title=' + encodeURIComponent(jQuery('title').text()), '_blank');
+      });
   }
 
   // Check if jQuery is loaded 检查jQuery是否已加载

@@ -4,7 +4,14 @@
 
 {% block content %}
     <h1>{{ image.title }}</h1>
-    <img src="{{ image.image.url }}" class="image-detail">
+{#    <img src="{{ image.image.url }}" class="image-detail"> 用sorl-thumbnail定义图像缩略图后，此行代码被替换。#}
+    {% load thumbnail %}
+    {% thumbnail image.image "300" as im%}
+        <a href="{{ image.image.url }}">
+            <img src="{{ im.url }}" class="image-detail">
+        </a>
+    {% endthumbnail %}
+{#    上面代码定义了一个固定宽度为300像素的缩略图。#}
     {% with total_likes=image.users_like.count %}
         <div class="image-info">
             <div>

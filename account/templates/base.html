@@ -45,5 +45,13 @@
         {% block content %}
         {% endblock %}
     </div>
+{#    <script src="https://libs.cdnjs.net/jquery/3.2.1/jquery.min.js"></script>#}
+    <script src="../../images/static/js/jquery.min.3.2.1.js"></script>
+{#    绝对路径：../跳到上级目录层面，../../跳到上上级目录层面#}
+    <script>
+        $(document).ready(function(){
+            {% block domready %}{% endblock %}
+        });
+    </script>
 </body>
 </html>

@@ -2,6 +2,7 @@
   <dictionary name="oracle12c">
     <words>
       <w>bookmarklet</w>
+      <w>csrftoken</w>
       <w>ngrok</w>
       <w>ocurred</w>
       <w>smtp</w>

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="31c87d40-791e-48af-a064-51082db5f0f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/templates/images/image/list_ajax.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/templates/images/image/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/images/templates/images/image/list.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,12 +71,12 @@
           <entry key="django_content_type" value="1" />
           <entry key="django_migrations" value="4" />
           <entry key="django_session" value="3" />
-          <entry key="html" value="136" />
+          <entry key="html" value="141" />
           <entry key="ico" value="1" />
           <entry key="jpg" value="10" />
           <entry key="js" value="18" />
           <entry key="pstat" value="1" />
-          <entry key="py" value="227" />
+          <entry key="py" value="228" />
           <entry key="sql" value="2" />
           <entry key="sqlite_master" value="2" />
           <entry key="sqlite_sequence" value="2" />
@@ -87,29 +87,29 @@
         <counts>
           <entry key="CSS" value="5" />
           <entry key="Database Element" value="27" />
-          <entry key="HTML" value="136" />
+          <entry key="HTML" value="141" />
           <entry key="Image" value="11" />
           <entry key="JavaScript" value="18" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Profiler Session" value="1" />
-          <entry key="Python" value="227" />
+          <entry key="Python" value="228" />
           <entry key="Scratch" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="8469" />
+          <entry key="html" value="8477" />
           <entry key="js" value="2471" />
           <entry key="py" value="10699" />
           <entry key="sql" value="12" />
-          <entry key="txt" value="627" />
+          <entry key="txt" value="629" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="8470" />
+          <entry key="HTML" value="8478" />
           <entry key="JavaScript" value="2470" />
-          <entry key="PLAIN_TEXT" value="627" />
+          <entry key="PLAIN_TEXT" value="629" />
           <entry key="Python" value="10699" />
           <entry key="Scratch" value="12" />
         </counts>
@@ -117,7 +117,26 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/templates/images/image/list_ajax.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="17" column="12" lean-forward="true" selection-start-line="2" selection-end-line="17" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/images/templates/images/image/list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -134,6 +153,7 @@
       <find>username</find>
       <find>user</find>
       <find>AUTH_USER_MODEL</find>
+      <find>ajax</find>
     </findStrings>
     <dirStrings>
       <dir>E:\djangoProject\bookmarks\media\images\2020\03\02</dir>
@@ -234,6 +254,12 @@
             <path>
               <item name="bookmarks" type="b2602c69:ProjectViewProjectNode" />
               <item name="bookmarks" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookmarks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookmarks" type="462c0819:PsiDirectoryNode" />
               <item name="bookmarks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -305,17 +331,17 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\djangoProject\bookmarks\images\static\js" />
-      <recent name="E:\djangoProject\bookmarks\account\static" />
-      <recent name="E:\djangoProject\bookmarks\media\images" />
-      <recent name="E:\djangoProject\bookmarks\images" />
-      <recent name="E:\djangoProject\bookmarks\account\static\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\djangoProject\bookmarks" />
       <recent name="E:\djangoProject\bookmarks\account\templates\account" />
       <recent name="E:\djangoProject\bookmarks\account\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\djangoProject\bookmarks\images\templates\images\image" />
+      <recent name="E:\djangoProject\bookmarks\images\static\js" />
+      <recent name="E:\djangoProject\bookmarks\account\static" />
+      <recent name="E:\djangoProject\bookmarks\media\images" />
+      <recent name="E:\djangoProject\bookmarks\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -604,15 +630,23 @@
       <option name="project" value="LOCAL" />
       <updated>1583561502844</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="20200302-5.8用普通分页技术不用ajax-v1">
+      <created>1583561847946</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1583561847946</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.3215159" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.3215159" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32922733" />
@@ -624,7 +658,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32922733" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33482644" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33482644" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Console" order="13" visible="true" weight="0.35610303" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -642,7 +676,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="20200223-真实邮箱发送邮件，用来重置密码-v1" />
     <MESSAGE value="20200223-真实邮箱发送邮件，用来重置密码-v2" />
     <MESSAGE value="20200224-填哪个用户的注册邮箱，就重置哪个用户的密码，和登陆的用户没关系-v3" />
     <MESSAGE value="20200224-填哪个用户的注册邮箱，就重置哪个用户的密码，和登陆的用户没关系-v4" />
@@ -667,7 +700,8 @@
     <MESSAGE value="20200302-5.5.1加载jquery-v1" />
     <MESSAGE value="20200302-5.5.3利用jquery执行ajax请求-v1" />
     <MESSAGE value="20200302-5.5.3利用jquery执行ajax请求-用普通分页技术不用ajax-v1" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200302-5.5.3利用jquery执行ajax请求-用普通分页技术不用ajax-v1" />
+    <MESSAGE value="20200302-5.8用普通分页技术不用ajax-v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200302-5.8用普通分页技术不用ajax-v1" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/account/templates/registration/logged_out.html">
@@ -856,13 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/account/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://b98a985c-dba5-434b-931c-abef14d42055/schema/main/table/django_migrations">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -930,13 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/templates/images/image/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/templates/images/image/pagination.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -944,20 +964,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/templates/images/image/list_ajax.html">
+    <entry file="file://$PROJECT_DIR$/account/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        <state relative-caret-position="198">
+          <caret line="57" column="14" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/images/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="171">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="5" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/templates/images/image/list_ajax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="2" selection-end-line="17" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/templates/images/image/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
         </state>
       </provider>
     </entry>

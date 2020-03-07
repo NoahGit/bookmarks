@@ -1,11 +1,27 @@
 {% extends "base.html" %}
+{% load thumbnail %}
 
 {% block title %}Images bookmarked{% endblock %}
 
 {% block content %}
   <h1>Images bookmarked</h1>
   <div id="image-list">
-    {% include "images/image/list_ajax.html" %}
+    {% for image in images %}
+        <div class="image">
+            <a href="{{ image.get_absolute_url }}">
+              {% thumbnail image.image "300x300" crop="100%" as im %}
+                <a href="{{ image.get_absolute_url }}">
+                  <img src="{{ im.url }}">
+                </a>
+              {% endthumbnail %}
+            </a>
+            <div class="info">
+              <a href="{{ image.get_absolute_url }}" class="title">
+                {{ image.title }}
+              </a>
+            </div>
+        </div>
+    {% endfor %}
   </div>
     {% include "images/image/pagination.html" with page=images %}
 {% endblock %}

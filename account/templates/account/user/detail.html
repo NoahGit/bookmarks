@@ -24,7 +24,8 @@
             {% endif %}
         </a>
         <div id="image-list" class="image-container">
-            {% include "images/image/list.html" with images=user.images_created.all %}
+        {#    下面include里面的with后面的page=page,images=images,是传参，把参数page和images的值传到list.html页面中去。#}
+            {% include "images/image/list.html" with images=images page=page%}
         </div>
     {% endwith %}
 {% endblock %}

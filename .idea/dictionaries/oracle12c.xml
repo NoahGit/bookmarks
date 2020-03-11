@@ -8,6 +8,7 @@
       <w>smtp</w>
       <w>sorl</w>
       <w>uidb</w>
+      <w>unfollow</w>
     </words>
   </dictionary>
 </component>

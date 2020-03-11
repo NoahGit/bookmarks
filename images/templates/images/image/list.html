@@ -23,5 +23,6 @@
         </div>
     {% endfor %}
   </div>
+{#    下面include里面的with后面的page=images,是传参，把参数page的值images传到pagination.html页面中去。#}
     {% include "images/image/pagination.html" with page=images %}
 {% endblock %}

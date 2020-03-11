@@ -9,6 +9,11 @@ from django.shortcuts import get_object_or_404
 from django.contrib.auth.models import User
 
 
+from images.models import Image
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+
+
+
 # def user_login(request):
 #     if request.method == 'POST':
 #         form = LoginForm(request.POST)
@@ -78,7 +83,19 @@ def user_list(request):
 @login_required
 def user_detail(request, username):
     user = get_object_or_404(User, username=username, is_active=True)
-    return render(request, 'account/user/detail.html', {'section': 'people', 'user': user})
+
+    images_list = Image.objects.all().order_by("id")
+    paginator = Paginator(images_list, 3)
+    page = request.GET.get('page')
+    try:
+        images = paginator.page(page)
+    except PageNotAnInteger:
+        images = paginator.page(1)
+    except EmptyPage:
+        images = paginator.page(paginator.num_pages)
+
+    return render(request, 'account/user/detail.html', {'section': 'people', 'user': user,
+                                                        'page': page, 'images': images})
 
 
 

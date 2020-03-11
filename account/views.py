@@ -84,7 +84,8 @@ def user_list(request):
 def user_detail(request, username):
     user = get_object_or_404(User, username=username, is_active=True)
 
-    images_list = Image.objects.all().order_by("id")
+    # images_list = Image.objects.all().order_by("id")
+    images_list = user.images_created.all().order_by("id")
     paginator = Paginator(images_list, 3)
     page = request.GET.get('page')
     try:

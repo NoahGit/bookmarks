@@ -1,17 +1,17 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
 from .forms import LoginForm, UserRegistrationForm, UserEditForm, ProfileEditForm
 from django.contrib.auth.decorators import login_required
-from .models import Profile
+from .models import Profile, Contact
 from django.contrib import messages
 from django.shortcuts import get_object_or_404
 from django.contrib.auth.models import User
-
-
+from django.views.decorators.http import require_POST
+from common.decorators import ajax_required
 from images.models import Image
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-
+from django.views.decorators.csrf import csrf_exempt
 
 
 # def user_login(request):
@@ -84,6 +84,7 @@ def user_list(request):
 def user_detail(request, username):
     user = get_object_or_404(User, username=username, is_active=True)
 
+    # 下面这9行代码，是添加了分页功能，这段代码给页码page和每页的图像数量images，这两个参数赋值。
     # images_list = Image.objects.all().order_by("id")
     images_list = user.images_created.all().order_by("id")
     paginator = Paginator(images_list, 3)
@@ -99,5 +100,23 @@ def user_detail(request, username):
                                                         'page': page, 'images': images})
 
 
+@ajax_required
+@require_POST
+@login_required
+@csrf_exempt
+def user_follow(request):
+    user_id = request.POST.get('id')
+    action = request.POST.get('action')
+    if user_id and action:
+        try:
+            user = User.objects.get(id=user_id)
+            if action == 'follow':
+                Contact.objects.get_or_create(user_from=request.user, user_to=user)
+            else:
+                Contact.objects.filter(user_from=request.user, user_to=user).delete()
+            return JsonResponse({'status': 'ok'})
+        except User.DoesNotExist:
+            return JsonResponse({'status': 'ko'})
+    return JsonResponse({'status': 'ko'})
 
 

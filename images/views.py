@@ -9,6 +9,7 @@ from django.views.decorators.http import require_POST
 from common.decorators import ajax_required
 from django.http import HttpResponse
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from actions.utils import create_action
 
 
 @login_required
@@ -23,6 +24,7 @@ def image_create(request):
             # assign current user to the item将当前用户分配给项
             new_item.user = request.user
             new_item.save()
+            create_action(request.user, 'bookmarked image', new_item)
             messages.success(request, 'Image added successfully')
             # redirect to new created item detail view重定向到新创建的项目详细信息视图
             return redirect(new_item.get_absolute_url())

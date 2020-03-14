@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="31c87d40-791e-48af-a064-51082db5f0f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookmarks/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookmarks/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/templates/images/image/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/images/templates/images/image/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/images/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,12 +74,12 @@
           <entry key="django_content_type" value="1" />
           <entry key="django_migrations" value="4" />
           <entry key="django_session" value="3" />
-          <entry key="html" value="179" />
+          <entry key="html" value="181" />
           <entry key="ico" value="1" />
           <entry key="jpg" value="10" />
           <entry key="js" value="19" />
           <entry key="pstat" value="1" />
-          <entry key="py" value="280" />
+          <entry key="py" value="281" />
           <entry key="sql" value="2" />
           <entry key="sqlite_master" value="2" />
           <entry key="sqlite_sequence" value="2" />
@@ -88,31 +90,31 @@
         <counts>
           <entry key="CSS" value="5" />
           <entry key="Database Element" value="27" />
-          <entry key="HTML" value="179" />
+          <entry key="HTML" value="181" />
           <entry key="Image" value="11" />
           <entry key="JavaScript" value="19" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Profiler Session" value="1" />
-          <entry key="Python" value="280" />
+          <entry key="Python" value="281" />
           <entry key="Scratch" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Django Console" value="27" />
-          <entry key="html" value="10498" />
+          <entry key="html" value="10537" />
           <entry key="js" value="2471" />
-          <entry key="py" value="14551" />
+          <entry key="py" value="14783" />
           <entry key="sql" value="12" />
-          <entry key="txt" value="782" />
+          <entry key="txt" value="808" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="10499" />
+          <entry key="HTML" value="10538" />
           <entry key="JavaScript" value="2470" />
-          <entry key="PLAIN_TEXT" value="782" />
-          <entry key="Python" value="14578" />
+          <entry key="PLAIN_TEXT" value="808" />
+          <entry key="Python" value="14810" />
           <entry key="Scratch" value="12" />
         </counts>
       </usages-collector>
@@ -181,7 +183,6 @@
         <option value="$PROJECT_DIR$/images/templates/images/image/create.html" />
         <option value="$PROJECT_DIR$/images/templates/bookmarklet_launcher.js" />
         <option value="$PROJECT_DIR$/images/static/js/bookmarklet.js" />
-        <option value="$PROJECT_DIR$/images/templates/images/image/detail.html" />
         <option value="$PROJECT_DIR$/common/__init__.py" />
         <option value="$PROJECT_DIR$/common/decorators.py" />
         <option value="$PROJECT_DIR$/images/urls.py" />
@@ -198,13 +199,14 @@
         <option value="$PROJECT_DIR$/actions/utils.py" />
         <option value="$PROJECT_DIR$/account/templates/base.html" />
         <option value="$PROJECT_DIR$/account/templates/account/user/detail.html" />
-        <option value="$PROJECT_DIR$/images/views.py" />
         <option value="$PROJECT_DIR$/account/views.py" />
         <option value="$PROJECT_DIR$/account/templates/account/dashboard.html" />
         <option value="$PROJECT_DIR$/images/models.py" />
         <option value="$PROJECT_DIR$/images/signals.py" />
         <option value="$PROJECT_DIR$/images/apps.py" />
         <option value="$PROJECT_DIR$/bookmarks/settings.py" />
+        <option value="$PROJECT_DIR$/images/views.py" />
+        <option value="$PROJECT_DIR$/images/templates/images/image/detail.html" />
       </list>
     </option>
   </component>
@@ -299,6 +301,27 @@
               <item name="bookmarks" type="b2602c69:ProjectViewProjectNode" />
               <item name="bookmarks" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookmarks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookmarks" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookmarks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookmarks" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookmarks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookmarks" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -678,7 +701,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584158641270</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="202003014-6.4.2结合python使用redis-v1">
+      <created>1584177380248</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1584177380248</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView">
@@ -725,7 +755,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="20200228-5.1.1没有迁移之前的数据-v1" />
     <MESSAGE value="20200228-5.1.3在管理站点中注册图像模型-v1" />
     <MESSAGE value="20200228-5.2.2覆写ModelForm的save()方法，templates目录刚建立，还没生效-v1" />
     <MESSAGE value="20200228-5.2.2覆写ModelForm的save()方法-v2" />
@@ -750,7 +779,8 @@
     <MESSAGE value="202003014-6.2.7针对操作活动创建模版-v1" />
     <MESSAGE value="202003014-6.2.7针对操作活动创建模版-v2" />
     <MESSAGE value="202003014-6.3.2应用程序配置类-v1" />
-    <option name="LAST_COMMIT_MESSAGE" value="202003014-6.3.2应用程序配置类-v1" />
+    <MESSAGE value="202003014-6.4.2结合python使用redis-v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="202003014-6.4.2结合python使用redis-v1" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/media/images/2020/03/02/2300-2-.jpg" />
@@ -956,13 +986,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/templates/images/image/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-828">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/actions/tests.py" />
     <entry file="file://$PROJECT_DIR$/actions/admin.py" />
     <entry file="file://$PROJECT_DIR$/actions/models.py" />
@@ -1021,16 +1044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/account/templates/actions/action/detail.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1080,6 +1093,23 @@
           <folding>
             <element signature="e#310#319#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="50" column="14" lean-forward="true" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/templates/images/image/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
         </state>
       </provider>
     </entry>
